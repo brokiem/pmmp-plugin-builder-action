@@ -33,8 +33,30 @@ jobs:
       - name: Download ConsoleScript.php
         run: wget https://gist.githubusercontent.com/brokiem/3a407df6372ed1410cfb38cf99762a3f/raw/cbaad1d0d2caf8ca90cf2d82e0a406006caca5b3/ConsoleScript.php
 
-      - name: Build Phar
+      - name: Build Plugin PHAR
         run: php ConsoleScript.php --make / --relative plugin --out target/${{ steps.plugin-name.outputs.data }}.phar
+
+      - name: "Check libraries.yml file existence"
+        id: libraries-file
+        uses: andstor/file-existence-action@v1
+        with:
+          files: ".libraries.yml"
+
+      - name: Read .libraries.yml
+        if: steps.libraries-file.outputs.files_exists == 'true'
+        id: libraries
+        uses: KJ002/read-yaml@main
+        with:
+          file: './.libraries.yml'
+          key-path: '["libs"]'
+
+      - name: Download virions
+        if: steps.libraries-file.outputs.files_exists == 'true'
+        run: php -r 'foreach(${{ steps.libraries.outputs.data }} as $lib){ exec("wget $lib"); }'
+
+      - name: Inject virions to plugin phar
+        if: steps.libraries-file.outputs.files_exists == 'true'
+        run: php -r 'foreach(${{ steps.libraries.outputs.data }} as $lib){ exec("php " . basename($lib) . " target/${{ steps.plugin-name.outputs.data }}.phar"); }'
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v2

@@ -1,0 +1,5 @@
+# You can use any url as long as it is raw virion phar url (eg. https://example.com/ExampleVirion.phar)
+libs:
+  - https://poggit.pmmp.io/r/128035/DiscordWebhookAPI_dev-20.phar
+  - https://poggit.pmmp.io/r/177279/libasynql_dev-177.phar
+  - https://poggit.pmmp.io/r/169298/FormsUI_dev-17.phar
