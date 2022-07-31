@@ -7,7 +7,7 @@ phar plugin.
 ## How to use
 
 1. Create directory ``.github/workflows`` in your root repository
-2. Copy ``phar-build.yml`` from this repo to ``.github/workflows`` directory
+2. Copy ``phar-build.yml`` from this repo into your ``.github/workflows`` directory
 3. Create file ``.libraries.yml`` if you're using virion(s) and then look at the example how to use it in this repo in
    the [.libraries.yml](https://github.com/brokiem/pm-plugin-builder-actions/blob/master/.libraries.yml)
    file
