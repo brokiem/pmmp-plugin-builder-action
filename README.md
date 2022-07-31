@@ -9,7 +9,7 @@ You can make phar of your plugin with GitHub Actions
 
 ### Info
 - If you don't want to make release the phar, you can delete ``prepare-release`` job.
-- Download the phar from actions artifact
+- Download the generated phar from actions artifact
 - You are free to modify anything from ``phar-build.yml``
 
 ### Question?
