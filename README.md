@@ -5,7 +5,8 @@ You can make phar of your plugin and injecting virions with GitHub Actions
 
 1. Create folder/directory ``.github/workflows``
 2. Copy ``phar-build.yml`` from this repo to ``.github/workflows`` directory
-3. Create file ``.libraries.yml`` if you're using virion(s) and look at the example in this repo in the .libraries.yml
+3. Create file ``.libraries.yml`` if you're using virion(s) and look at the example in this repo in
+   the [.libraries.yml](https://github.com/brokiem/pm-plugin-builder-actions/blob/master/.libraries.yml)
    file
 4. Activate ``Actions`` on your plugin repo
 5. Trigger the actions
