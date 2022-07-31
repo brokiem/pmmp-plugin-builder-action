@@ -31,7 +31,7 @@ jobs:
           key-path: '["name"]'
 
       - name: Download ConsoleScript.php
-        run: wget https://gist.githubusercontent.com/brokiem/3a407df6372ed1410cfb38cf99762a3f/raw/cbaad1d0d2caf8ca90cf2d82e0a406006caca5b3/ConsoleScript.php
+        run: wget https://gist.githubusercontent.com/brokiem/3a407df6372ed1410cfb38cf99762a3f/raw/e740766a0dda15bad37cc8ae1e82863331e38da0/ConsoleScript.php
 
       - name: Build Plugin PHAR
         run: php ConsoleScript.php --make / --relative plugin --out target/${{ steps.plugin-name.outputs.data }}.phar
