@@ -2,7 +2,7 @@
 You can make phar of your plugin with GitHub Actions
 
 ### How to use
-1. Make folder ``.github/workflows``
+1. Create folder/directory ``.github/workflows``
 2. Copy ``phar-build.yml`` from this repo to ``.github/workflows`` directory
 3. Activate ``Actions`` on  your plugin repo
 4. Trigger the actions
