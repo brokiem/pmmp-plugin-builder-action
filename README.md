@@ -16,7 +16,7 @@ You can make phar of your plugin and injecting virions with GitHub Actions
 ### Info
 - If you don't want to make release the phar, you can delete ``prepare-release`` job.
 - Download the generated phar from actions artifact
-- This plugin support any pocketmine version
+- This phar-builder support any pocketmine version
 - You are free to modify anything from ``phar-build.yml``
 
 ### Question?
