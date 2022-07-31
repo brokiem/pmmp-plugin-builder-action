@@ -15,16 +15,16 @@ phar plugin.
 5. Trigger the actions to execute the script
 6. Done. You should have the generated phar now 👍🏻 🌟
 
-## Examples
-
-- https://github.com/brokiem-pm-pl/PvPToggle/tree/pm4
-
 ## Information
 
 - If you don't want to create release for the phar, you can delete ``prepare-release`` job.
 - You can download the generated phar from actions artifact or repo release section
 - This phar-builder support any pocketmine plugin version
-- You are free to modify anything from ``phar-build.yml``
+- You are free to modify anything from ``phar-build.yml`` file
+
+## Examples
+
+- https://github.com/brokiem-pm-pl/PvPToggle/tree/pm4
 
 ## Question?
 
