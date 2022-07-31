@@ -89,7 +89,7 @@ jobs:
           key-path: '["version"]'
 
       - name: Create and publish release
-        uses: marvinpinto/action-automatic-releases@v1.1.1
+        uses: marvinpinto/action-automatic-releases@v1.2.1
         with:
           automatic_release_tag: "${{ steps.plugin-version.outputs.data }}"
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
