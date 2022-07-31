@@ -1,4 +1,5 @@
 # You can use any url as long as it is raw virion phar url (eg. https://example.com/ExampleVirion.phar)
+# You can add as many urls as you want to inject to your plugin
 libs:
   - https://poggit.pmmp.io/r/128035/DiscordWebhookAPI_dev-20.phar
   - https://poggit.pmmp.io/r/177279/libasynql_dev-177.phar
