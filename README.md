@@ -25,6 +25,7 @@ phar plugin.
 ## Examples
 
 - https://github.com/brokiem-pm-pl/PvPToggle/tree/pm4
+- https://github.com/brokiem/SimplePets/tree/broki-patch
 
 ## Question?
 
