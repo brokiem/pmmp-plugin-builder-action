@@ -53,7 +53,7 @@ jobs:
 
       - name: Download virions
         if: steps.libraries-file.outputs.files_exists == 'true'
-        run: php -r 'foreach(${{ steps.libraries.outputs.data }} as $lib){ exec("wget $lib"); echo "Downloaded virion " . basename($lib); }'
+        run: php -r 'foreach(${{ steps.libraries.outputs.data }} as $lib){ exec("wget $lib"); echo "\nDownloaded virion " . basename($lib); }'
 
       - name: Inject virions
         if: steps.libraries-file.outputs.files_exists == 'true'
