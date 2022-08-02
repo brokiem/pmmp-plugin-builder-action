@@ -17,7 +17,7 @@ phar plugin.
 
 ## Information
 
-- If you don't want to create release for the phar, you can delete ``prepare-release`` job.
+- If you want to release the phar on your repo, add ``[release]`` on the commit message
 - You can download the generated phar from actions artifact or repo release section
 - This phar-builder support any pocketmine plugin version
 - You are free to modify anything from ``phar-build.yml`` file
